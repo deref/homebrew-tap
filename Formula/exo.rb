@@ -5,28 +5,28 @@
 class Exo < Formula
   desc ""
   homepage "https://exo.deref.io"
-  version "2021.10.29"
+  version "2021.10.27"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/BenElgar/exo/releases/download/2021.10.29/exo_managed_2021.10.29_darwin_arm64.tar.gz"
-      sha256 "a1eb473311f8be9ca3e975bcdfcb107c88ea2a70e82fce920c39c3469670a3c0"
+      url "https://github.com/deref/exo/releases/download/2021.10.27/exo_managed_2021.10.27_darwin_arm64.tar.gz"
+      sha256 "88edcd07d41053bfc6b98d56f0aa8e19ad50e1eca03d20502587fa6750baeffd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/BenElgar/exo/releases/download/2021.10.29/exo_managed_2021.10.29_darwin_amd64.tar.gz"
-      sha256 "ccf66f05f4bf0d89e1c5a4815bf6dd60fc9da7ba5b2ce287ede311de15ce2fa5"
+      url "https://github.com/deref/exo/releases/download/2021.10.27/exo_managed_2021.10.27_darwin_amd64.tar.gz"
+      sha256 "21f9dc0382527680dd90f1304fa58ca06be8bda065b2d13b15841fbaecd93df6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/BenElgar/exo/releases/download/2021.10.29/exo_managed_2021.10.29_linux_arm64.tar.gz"
-      sha256 "ddc20e3beb5e773225b4bdebea5e3d877bcd330094e40211c2a2abdd0f4f3c2d"
+      url "https://github.com/deref/exo/releases/download/2021.10.27/exo_managed_2021.10.27_linux_arm64.tar.gz"
+      sha256 "6c09b4561f018349837faa61dedc5af4bf0273ab12058bc13e27806bfa3671f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/BenElgar/exo/releases/download/2021.10.29/exo_managed_2021.10.29_linux_amd64.tar.gz"
-      sha256 "18c1d1e01c1ef10639ca7ed5142281570f53b46753021247c216c44861c22d18"
+      url "https://github.com/deref/exo/releases/download/2021.10.27/exo_managed_2021.10.27_linux_amd64.tar.gz"
+      sha256 "c2271628a8a25bc6d3b211fa4bf765120ba3dac6a7dcfe9f849392dfe8f66946"
     end
   end
 
