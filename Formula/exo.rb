@@ -6,7 +6,6 @@ class Exo < Formula
   desc ""
   homepage "https://exo.deref.io"
   version "2021.11.16"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
